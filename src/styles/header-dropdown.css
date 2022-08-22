@@ -1,26 +1,10 @@
-.dropdown__nav {
-        background-color: rgb(51, 233, 111);
-        width: 80px;
-
+.popover__body {
+  background-color: aqua;
+  width: 500px;
 }
 
-
-.dropdown__item ul  {
-width: 600px;
-margin: auto;
-display: flex;
-justify-content: center;
-align-items:inherit;
-flex-direction: column;
-list-style: none;
-border-radius: 5px;
-row-gap: 10px;
+.popover__body ul {
+  list-style: none;
 }
-
-.dropdown__item ul li {
-  color: #000;
-}
-
-
 
 

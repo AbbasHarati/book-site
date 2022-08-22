@@ -49,7 +49,7 @@ const Header = () => {
       <Container>
         {/*============= headet top ==========*/}
         <Row className='header__top'>
-          <Col lg='4'>
+          <Col sm>
             <div className='header__top_right'>
               <Link to='#'>
                 <i class="ri-login-circle-line"></i>
@@ -63,7 +63,7 @@ const Header = () => {
             </div>
           </Col>
 
-          <Col lg='8'>
+          <Col sm>
             <div className='header__search '>
               <Form>
                 <FormGroup >
@@ -81,23 +81,25 @@ const Header = () => {
         </Row>
         <hr />
         {/*============= header middle ==========*/}
-          <Row className='header__middle'>
-            <Col lg={6} md={12} sm={12}>
-              <div className='header__logo'>
-                <h3>
-                  <Link to='/home'><i class="ri-book-open-fill"></i>
-                    <span>مرجع دانلود کتاب دندانپزشکی</span>
-                  </Link>
-                </h3>
-              </div>
-            </Col>
+        <Row className='header__bottom'>
+          <Col sm>
+            <div className='header__logo'>
+              <h3>
+                <Link to='/home'><i class="ri-book-open-fill"></i>
+                  <span>مرجع دانلود کتاب دندانپزشکی</span>
+                </Link>
+              </h3>
+            </div>
+          </Col>
 
-            <Col lg={6} md={12} sm={12}>
-                <HeaderDropdown />
-            </Col>
-          </Row>
-        </Container>
-    </header>
+          <Col sm>
+            <div className="header__category">
+              <HeaderDropdown />
+           |</div>
+          </Col>
+        </Row>
+      </Container>
+    </header >
   );
 }
 
