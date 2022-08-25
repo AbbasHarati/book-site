@@ -1,10 +1,26 @@
-.popover__body {
-  background-color: aqua;
-  width: 500px;
+.btn{
+  background-color: aquamarine;
 }
 
-.popover__body ul {
+.modal__section a {
+  text-decoration: none;
+}
+
+.special__category ul {
   list-style: none;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
 }
 
+.special__category ul li {
+  font-size: 1.2rem;
+}
 
+.questions__category ul {
+  list-style: none;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.rtl.min.css';
 import 'remixicon/fonts/remixicon.css';
@@ -10,7 +10,7 @@ import './fonts/Vazir.ttf';
 import { ThemeProvider } from 'react-bootstrap';
 
 import { BrowserRouter as Router } from 'react-router-dom'
-
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,10 +1,13 @@
 import React from 'react'
+import TemplateBookShow from '../components/UI/TemplateBookShow'
+
 
 const Surgery = () => {
+  const category ="surgery";
+  const title = "کتاب های جراحی";
+
   return (
-    <div>
-      جراحی
-    </div>
+         <TemplateBookShow category={category} title={title} />
   )
 }
 

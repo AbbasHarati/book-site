@@ -7,6 +7,10 @@ import Surgery from '../pages/Surgery'
 import Tarmim from '../pages/Tarmim'
 import Perio from '../pages/Perio'
 import Prosthetics from '../pages/Prosthetics'
+import Pediatric from '../pages/Pediatric'
+import DentalMaterials from '../pages/DentalMaterials'
+import OralMedicine from '../pages/OralMedicin'
+import BasicSciences from '../pages/BasicSciences'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
 import NotFound from '../pages/NotFound'
@@ -22,7 +26,12 @@ const Routers = () => {
       <Route  path='/Perio' element={<Perio />} />
       <Route  path='/Tarmim' element={<Tarmim />} />
       <Route  path='/Prosthetics' element={<Prosthetics />} />
+      <Route  path='/Pediatric' element={<Pediatric />} />
       <Route  path='/about' element={<About />} />
+      <Route  path='/DentalMaterials' element={<DentalMaterials />} />
+      <Route  path='/OralMedicine' element={<OralMedicine />} />
+      <Route  path='/BasicSciences' element={<BasicSciences />} />
+
       <Route  path='/contact' element={<Contact />} />
       <Route  path='*' element={<NotFound />} />
     </Routes>

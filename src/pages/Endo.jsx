@@ -1,10 +1,13 @@
 import React from 'react'
+import TemplateBookShow from '../components/UI/TemplateBookShow'
+
+
 
 const Endo = () => {
+  const category = "endondontics";
+  const title = "کتاب های اندودانتیکس";
   return (
-    <div>
-      اندودانتیکس
-    </div>
+         <TemplateBookShow category={category} title={title} />
   )
 }
 

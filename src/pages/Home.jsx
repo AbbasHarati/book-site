@@ -1,9 +1,9 @@
 import React from 'react';
 import HeroSlider from '../components/UI/HeroSlider';
 import Helmet from "../components/helmet/Helmet";
-import { Container, Row, Col } from 'react-bootstrap';
-import categoryData from '../assets/data/categoryData';
+import { Container} from 'react-bootstrap';
 import CategoryItem from '../components/UI/CategoryItem';
+
 
 const Home = () => {
   return (
@@ -15,16 +15,9 @@ const Home = () => {
       </section>
 
       {/* =========== category section ============= */}
-      <section className="mt-5">
+      <section className="mt-3">
         <Container>
-          <Row>
-            <Col lg="12" className="text-center mb-5">
-              <h2 className="section__title">گروه های تخصصی</h2>
-            </Col>
-              {categoryData.map((item) => (
-                <CategoryItem item={item} key={item.id} />
-              ))}
-          </Row>
+          <CategoryItem />
         </Container>
       </section>
 
