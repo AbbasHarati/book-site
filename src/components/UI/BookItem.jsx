@@ -4,7 +4,7 @@ import '../../styles/book-item.css'
 
 
 const BookItem = (props) => {
-  const { imgUrl, title, edition, author } = props.item;
+  const { imgUrl, title, edition, author, publicationDate } = props.item;
   return (
     <Col lg="3" md="4" sm="6" className='col__section'>
       <div className="book__info m-2" >
@@ -20,6 +20,9 @@ const BookItem = (props) => {
           </div>
           <div className="book__author">
             <p>{author}</p>
+          </div>
+          <div className="book__pubDate">
+            <p>{publicationDate}</p>
           </div>
         </div>
       </div>

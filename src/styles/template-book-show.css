@@ -16,9 +16,27 @@
 }
 
 .sort__section {
-    color: blue;
-    background-color: rgb(77, 119, 119);
+    color: rgb(2, 2, 14);
+    background-color: rgb(173, 187, 187);
     display: flex;
     align-items: center;
 }
 
+.sort__selectors {
+   display: flex;
+   align-items: center;
+   gap: 1rem
+   ;
+}
+
+.sort__selectors ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 1rem;
+}
+
+.sort__selectors ul li:hover {
+    cursor: pointer;
+}
