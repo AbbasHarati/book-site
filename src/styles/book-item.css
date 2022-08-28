@@ -1,0 +1,38 @@
+.col__section {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.col__section:hover {
+    border: 1px solid grey;
+}
+
+.book__img {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: auto;
+}
+
+.book__title p {
+    padding: 5px;
+    text-align: left;
+    line-height: 30px;
+    font-size: 1rem;
+}
+
+.book__edition p{
+    padding: 5px;
+    text-align: left;
+    line-height: 5px;
+    font-size: 16px;
+}
+
+.book__author p{
+    padding: 5px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 16px;
+}
+
