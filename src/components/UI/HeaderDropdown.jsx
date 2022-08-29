@@ -12,8 +12,8 @@ function HeaderDropdown() {
 
     return (
         <>
-           <Button onClick={handleShow}>
-                لیست رشته ها
+            <Button onClick={handleShow}>
+                دسترسی سریع
             </Button>
             <Modal
                 show={show}
@@ -31,34 +31,37 @@ function HeaderDropdown() {
                                 <div className="special__category">
                                     <ul>
                                         <li onClick={handleClose}>
-                                            <Link to="/Ortho"> ارتودونسی</Link>
+                                            <Link to="/Ortho">ارتودونسی</Link>
                                         </li>
                                         <li onClick={handleClose}>
-                                            <Link to="/endo"> اندودانتیکس</Link>
+                                            <Link to="/endo">اندودانتیکس</Link>
                                         </li>
                                         <li onClick={handleClose}>
-                                            <Link to="/tarmim"> ترمیمی</Link>
+                                            <Link to="/tarmim">ترمیمی</Link>
                                         </li>
                                         <li onClick={handleClose}>
-                                            <Link to="/surgery"> جراحی</Link>
+                                            <Link to="/surgery">جراحی</Link>
                                         </li>
                                         <li onClick={handleClose}>
-                                            <Link to="/perio"> پریودانتیکس</Link>
+                                            <Link to="/perio">پریودانتیکس</Link>
                                         </li>
                                         <li onClick={handleClose}>
-                                            <Link to="/pediatric"> اطفال</Link>
+                                            <Link to="/pediatric">اطفال</Link>
                                         </li>
                                         <li onClick={handleClose}>
-                                            <Link to="/prosthetics"> پروتز</Link>
+                                            <Link to="/prosthetics">پروتز</Link>
                                         </li>
                                         <li onClick={handleClose}>
-                                            <Link to="/dentalMaterials"> مواد دندانی</Link>
+                                            <Link to="/dentalMaterials">مواد دندانی</Link>
                                         </li>
                                         <li onClick={handleClose}>
-                                            <Link to="/oralMedicine"> بیماری های دهان</Link>
+                                            <Link to="/oralMedicine">بیماری های دهان</Link>
                                         </li>
                                         <li onClick={handleClose}>
-                                            <Link to="/basicSciences"> علوم پایه</Link>
+                                            <Link to="/radiology">رادیولوژی</Link>
+                                        </li>
+                                        <li onClick={handleClose}>
+                                            <Link to="/basicSciences">علوم پایه</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -67,17 +70,21 @@ function HeaderDropdown() {
                                 <h4>سوالات آزمون</h4><hr />
                                 <div className="questions__category">
                                     <ul>
-                                        <li>1 </li>
-                                        <li>2 </li>
-                                        <li>3 </li>
-                                        <li>4 </li>
-                                        <li>5 </li>
-                                        <li>6 </li>
-                                        <li>7 </li>
-                                        <li>8 </li>
-                                        <li>9 </li>
-                                        <li>10 </li>
-
+                                        <li onClick={handleClose}>
+                                            <Link to=""> سوالات آزمون دستیاری</Link>
+                                        </li>
+                                        <li onClick={handleClose}>
+                                            <Link to=""> سوالات آزمون تخصص</Link>
+                                        </li>
+                                        <li onClick={handleClose}>
+                                            <Link to=""> سوالات آزمون ارتقاء</Link>
+                                        </li>
+                                        <li onClick={handleClose}>
+                                            <Link to=""> سوالات آزمون ملی</Link>
+                                        </li>
+                                        <li onClick={handleClose}>
+                                            <Link to=""> سوالات آزمون علوم پایه</Link>
+                                        </li>
                                     </ul>
                                 </div>
                             </Row>

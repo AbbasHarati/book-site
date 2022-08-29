@@ -1,9 +1,5 @@
 .filter__section{
-    background-color: aqua;
-}
-
-.row.show__section {
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .title__section {
@@ -17,7 +13,7 @@
 
 .sort__section {
     color: rgb(2, 2, 14);
-    background-color: rgb(173, 187, 187);
+    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -40,3 +36,4 @@
 .sort__selectors ul li:hover {
     cursor: pointer;
 }
+

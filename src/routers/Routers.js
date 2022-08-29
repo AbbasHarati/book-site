@@ -10,6 +10,7 @@ import Prosthetics from '../pages/Prosthetics'
 import Pediatric from '../pages/Pediatric'
 import DentalMaterials from '../pages/DentalMaterials'
 import OralMedicine from '../pages/OralMedicin'
+import Radiology from '../pages/Radiology'
 import BasicSciences from '../pages/BasicSciences'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
@@ -30,6 +31,7 @@ const Routers = () => {
       <Route  path='/about' element={<About />} />
       <Route  path='/DentalMaterials' element={<DentalMaterials />} />
       <Route  path='/OralMedicine' element={<OralMedicine />} />
+      <Route  path='/Radiology' element={<Radiology />} />
       <Route  path='/BasicSciences' element={<BasicSciences />} />
 
       <Route  path='/contact' element={<Contact />} />

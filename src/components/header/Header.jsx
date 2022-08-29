@@ -1,47 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, FormGroup, Button, Stack, Form } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../../styles/header.css';
 import HeaderDropdown from '../UI/HeaderDropdown';
 
-const navLinks = [
-  {
-    path: '/home',
-    display: 'صفحه اصلی'
-  },
-  {
-    path: '/Ortho',
-    display: ' ارتودونسی'
-  },
-  {
-    path: '/endo',
-    display: 'اندودانتیکس '
-  },
-  {
-    path: '/tarmim',
-    display: 'ترمیمی '
-  },
-  {
-    path: '/surgery',
-    display: 'جراحی '
-  },
-  {
-    path: '/perio',
-    display: ' پریودانتیکس'
-  },
-  {
-    path: '/prosthetics',
-    display: ' پروتز'
-  },
-  {
-    path: '/about',
-    display: 'درباره ما'
-  },
-  {
-    path: '/contact',
-    display: 'تماس با ما'
-  }
-]
 
 const Header = () => {
   return (

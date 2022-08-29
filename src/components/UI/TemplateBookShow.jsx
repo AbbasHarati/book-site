@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import booksData from '../../assets/data/booksData'
 import BookItem from './BookItem'
+import FilterSection from './FilterSection'
 import '../../styles/template-book-show.css'
 
 
@@ -40,13 +41,13 @@ const TemplateBookShow = (props) => {
     return (
         <Container>
             <Row>
-                <Col lg='4' className="filter__section">
-                    <div>
-                        Filters
+                <Col lg='3' >
+                    <div className="filter__section">
+                        <FilterSection />
                     </div>
                 </Col>
 
-                <Col lg='8' className="result__section">
+                <Col lg='9' className="result__section">
                     <div >
                         <Row>
                             <div className="title__section">
@@ -56,7 +57,7 @@ const TemplateBookShow = (props) => {
                         <Row>
                             <div className="sort__section">
                                 <div className="sort__selectors">
-                                    <p>مرتب سازی بر اساس:</p>
+                                    <strong><p>مرتب سازی بر اساس:</p></strong>
                                     <ul>
                                         <li onClick={sortByName}>عنوان</li>
                                         <li onClick={sortByAuthor}>نویسنده</li>
@@ -64,6 +65,7 @@ const TemplateBookShow = (props) => {
                                     </ul>
                                 </div>
                             </div>
+                            <hr />
                         </Row>
                         <Row className="show__section">
                             {booksDataObject.filter(book => (props.category == book.category || props.category == book.other_category))
