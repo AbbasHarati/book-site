@@ -37,3 +37,6 @@
     cursor: pointer;
 }
 
+.show__section {
+    margin-bottom: 1rem;
+}

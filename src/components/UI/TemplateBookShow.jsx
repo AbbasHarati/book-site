@@ -4,40 +4,25 @@
 import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import booksData from '../../assets/data/booksData'
-import BookItem from './BookItem'
+import BooksShow from './BooksShow'
 import FilterSection from './FilterSection'
 import '../../styles/template-book-show.css'
 
 
 const TemplateBookShow = (props) => {
-    const [booksDataObject, setBookDataObject] = useState(booksData);
 
-    const sortByName = () => {
-        setBookDataObject((booksData) => {
-            const dataTosort = [...booksData].sort((a, b) =>
-                a.title > b.title ? 1 : -1,
-            );
-            return dataTosort;
-        });
-    }
-    const sortByAuthor = () => {
-        setBookDataObject((booksData) => {
-            const dataTosort = [...booksData].sort((a, b) =>
-                a.author > b.author ? 1 : -1,
-            );
-            return dataTosort;
-        });
-    }
-    const sortByDate = () => {
-        setBookDataObject((booksData) => {
-            const dataTosort = [...booksData].sort((a, b) =>
-                a.publicationDate > b.publicationDate ? -1 : 1,
-            );
-            return dataTosort;
-        });
-    }
+    const field = props.category;
+    console.log(field);
 
 
+     
+    const [currentPage, setCurrentPage] = useState(1);
+    const [booksPerPage] = useState(6);
+
+    // Get current books
+    const indexOfLastBook = currentPage * booksPerPage;
+    const indexOfFirstBook = indexOfLastBook - booksPerPage;
+    const currentBooks = booksData.slice(indexOfFirstBook, indexOfLastBook);
     return (
         <Container>
             <Row>
@@ -59,20 +44,21 @@ const TemplateBookShow = (props) => {
                                 <div className="sort__selectors">
                                     <strong><p>مرتب سازی بر اساس:</p></strong>
                                     <ul>
-                                        <li onClick={sortByName}>عنوان</li>
-                                        <li onClick={sortByAuthor}>نویسنده</li>
-                                        <li onClick={sortByDate}>سال انتشار</li>
+                                        <li >عنوان</li>
+                                        <li >نویسنده</li>
+                                        <li >سال انتشار</li>
                                     </ul>
                                 </div>
                             </div>
                             <hr />
                         </Row>
                         <Row className="show__section">
-                            {booksDataObject.filter(book => (props.category == book.category || props.category == book.other_category))
-                                .map((book) => (
-                                    <BookItem item={book} key={book.id} />
-                                ))
-                            }
+
+                            <BooksShow booksData={currentBooks} category={field} />
+
+                        </Row>
+                        <Row>
+
                         </Row>
                     </div>
                 </Col>
