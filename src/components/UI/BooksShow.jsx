@@ -3,12 +3,14 @@ import { Col } from 'react-bootstrap'
 import '../../styles/book-item.css'
 
 
-const BooksShow = ({ booksData}, props) => {
-  
-    
+const BooksShow = (props) => {
+
+  console.log(props.category);
+  console.log(props.booksData);
   return (
     <>
-      {booksData
+      {
+        props.booksData.filter(book => (props.category === book.category || props.category === book.other_category))
          .map((book) => (
           <Col lg="3" md="4" sm="6" className='col__section'>
             <div className="book__info m-2" >

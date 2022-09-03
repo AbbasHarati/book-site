@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Button, Modal } from 'react-bootstrap';
+import { Container, Row, Button, Modal, Col } from 'react-bootstrap';
 
 import '../../styles/header-dropdown.css'
 
@@ -25,73 +25,112 @@ function HeaderDropdown() {
                 </Modal.Header>
                 <Modal.Body >
                     <Container>
-                        <div className='modal__section'>
-                            <Row>
-                                <h4>گروه های تخصصی</h4><hr />
-                                <div className="special__category">
-                                    <ul>
-                                        <li onClick={handleClose}>
-                                            <Link to="/Ortho">ارتودونسی</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to="/endo">اندودانتیکس</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to="/tarmim">ترمیمی</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to="/surgery">جراحی</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to="/perio">پریودانتیکس</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to="/pediatric">اطفال</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to="/prosthetics">پروتز</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to="/dentalMaterials">مواد دندانی</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to="/oralMedicine">بیماری های دهان</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to="/radiology">رادیولوژی</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to="/basicSciences">علوم پایه</Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </Row>
-                            <Row>
-                                <h4>سوالات آزمون</h4><hr />
-                                <div className="questions__category">
-                                    <ul>
-                                        <li onClick={handleClose}>
-                                            <Link to=""> سوالات آزمون دستیاری</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to=""> سوالات آزمون تخصص</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to=""> سوالات آزمون ارتقاء</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to=""> سوالات آزمون ملی</Link>
-                                        </li>
-                                        <li onClick={handleClose}>
-                                            <Link to=""> سوالات آزمون علوم پایه</Link>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <hr />
+                        <Row>
+                            <div className='special__list'>
+                                <h4>گروه های تخصصی</h4>
+                            </div>
+                        </Row>
+                        <hr />
+
+                        <div className='special__items'>
+                            <Row className='row__items'>
+                                <Col lg='3'>
+                                    <h4 onClick={handleClose}>
+                                        <Link to="/Ortho"><i class="ri-arrow-left-circle-fill"></i><span>ارتودونسی</span></Link>
+                                    </h4>
+                                </Col>
+
+                                <Col lg='3'>
+                                    <h4 onClick={handleClose}>
+                                        <Link to="/endo"><i class="ri-arrow-left-circle-fill"></i><span>اندودانتیکس</span></Link>
+                                    </h4>
+                                </Col>
+
+                                <Col lg='3'>
+                                    <h4 onClick={handleClose}>
+                                        <Link to="/tarmim"><i class="ri-arrow-left-circle-fill"></i><span>ترمیمی</span></Link>
+                                    </h4>
+                                </Col>
+
+                                <Col lg='3'>
+                                    <h4 onClick={handleClose}>
+                                       <Link to="/surgery"> <i class="ri-arrow-left-circle-fill"></i><span>جراحی دهان فک صورت</span></Link>
+                                    </h4>
+                                </Col>
+
+                                <Col lg='3'>
+                                    <h4 onClick={handleClose}>
+                                     <Link to="/Perio"><i class="ri-arrow-left-circle-fill"></i><span>پریودانتیکس</span></Link>
+                                    </h4>
+                                </Col>
+
+                                <Col lg='3'>
+                                    <h4 onClick={handleClose}>
+                                      <Link to="/Pediatric"><i class="ri-arrow-left-circle-fill"> </i><span>دندانپزشکی کودکان</span></Link>
+                                    </h4>
+                                </Col>
+
+                                <Col lg='3'>
+                                    <h4 onClick={handleClose}>
+                                       <Link to="/Prosthetics"> <i class="ri-arrow-left-circle-fill"></i><span>پروتز</span></Link>
+                                    </h4>
+                                </Col>
+
+                                <Col lg='3'>
+                                    <h4 onClick={handleClose}>
+                                       <Link to="/OralMedicine"><span> <i class="ri-arrow-left-circle-fill"></i>بیماری های دهان</span></Link>
+                                    </h4>
+                                </Col>
+
+                                <Col lg='3'>
+                                    <h4 onClick={handleClose}>
+                                        <Link to="/Radiology"><i class="ri-arrow-left-circle-fill"></i><span>رادیولوژی</span></Link>
+                                    </h4>
+                                </Col>
+                                <Col lg='3'>
+                                    <h4 onClick={handleClose}>
+                                        <Link to="/BasicSciences"> <i class="ri-arrow-left-circle-fill"></i><span>علوم پایه</span></Link>
+                                    </h4>
+                                </Col>
+
+
                             </Row>
                         </div>
+                        <hr />
+
+                        <Row>
+                            <h4>سوالات آزمون</h4><hr />
+                        </Row>
+
+                        <Row>
+                            <Col lg='3'>
+                                <h4 onClick={handleClose}>
+                                    <Link to="/#">آرمون تخصص</Link>
+                                </h4>
+                            </Col>
+
+                            <Col lg='3'>
+                                <h4 onClick={handleClose}>
+                                    <Link to="/#">آزمون دستیاری</Link>
+                                </h4>
+                            </Col>
+
+                            <Col lg='3'>
+                                <h4 onClick={handleClose}>
+                                    <Link to="/#">آزمون ارتقاء</Link>
+                                </h4>
+                            </Col>
+
+                            <Col lg='3'>
+                                <h4 onClick={handleClose}>
+                                    <Link to="/#">آزمون ملی</Link>
+                                </h4>
+                            </Col>
+                        </Row>
                     </Container>
-                </Modal.Body>
-            </Modal>
+                </Modal.Body >
+            </Modal >
         </>
     );
 }
@@ -99,54 +138,3 @@ export default HeaderDropdown;
 
 
 
-{/*
-
-function HeaderDropdown() {
-    const [show, setShow] = useState(false);
-    const [target, setTarget] = useState(null);
-    const ref = useRef(null);
-
-    const handleClick = (event) => {
-        setShow(!show);
-        setTarget(event.target);
-      };
-
-    return (
-        <div ref={ref}>
-            <Button onClick={handleClick}>Click me to see</Button>
-            <Overlay
-                show={show}
-                target={target}
-                placement="bottom"
-                container={ref}
-                containerPadding={20}
-            >
-                <Popover id="popover-basic" >
-                    <Popover.Header as="h3">رشته های تخصصی</Popover.Header>
-                    <div className="popover__body">
-                        <Popover.Body>
-                            {navLinks.map((item, index) => (
-                                <NavLink to={item.path} key={index} className={navClass => navClass.isActive ? 'nav__active nav__item' : 'nav__item'}>
-                                    <ul>
-                                        <li> {item.display}</li>
-                                    </ul>
-                                </NavLink>
-                            ))
-                            }
-                        </Popover.Body>
-                        <Popover.Header as="h3"> آزمون های گذشته</Popover.Header>
-                        <Popover.Body>
-                            <ul>
-                                <li> 222</li>
-                            </ul>
-                        </Popover.Body>
-                    </div>
-                </Popover>
-            </Overlay>
-        </div>
-
-
-    );
-}
-
-*/}

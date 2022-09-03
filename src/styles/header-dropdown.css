@@ -1,26 +1,15 @@
-.btn{
-  background-color: aquamarine;
-}
-
-.modal__section a {
-  text-decoration: none;
-}
-
-.special__category ul {
-  list-style: none;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-}
-
-.special__category ul li {
+.row__items h4 a {
   font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
 }
 
-.questions__category ul {
-  list-style: none;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  
+.row__items span {
+  align-items: center;
+  padding: 5px;
 }
+
+.row__items h4 a:hover {
+  color: red;
+}
+
