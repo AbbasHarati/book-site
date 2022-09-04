@@ -42,3 +42,10 @@
     line-height: 40px;
     font-size: 16px;
 }
+
+.pagination__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}

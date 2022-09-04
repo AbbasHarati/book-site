@@ -1,13 +1,11 @@
 import React from 'react'
-import TemplateBookShow from '../components/UI/TemplateBookShow'
+import FilteringBooks from '../components/UI/FilteringBooks';
 
 
 const Surgery = () => {
-  const category ="surgery";
-  const title = "کتاب های جراحی";
-
+   const category ="surgery";
   return (
-         <TemplateBookShow category={category} title={title} />
+         <FilteringBooks category={category} />
   )
 }
 

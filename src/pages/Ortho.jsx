@@ -1,13 +1,12 @@
 import React from 'react'
-import TemplateBookShow from '../components/UI/TemplateBookShow'
+import FilteringBooks from '../components/UI/FilteringBooks';
 
 
 const Ortho = () => {
   const category ="orthodontic";
-  const title = "کتاب های ارتودونسی";
 
   return (
-         <TemplateBookShow category={category} title={title} />
+         <FilteringBooks category={category} />
   )
 }
 

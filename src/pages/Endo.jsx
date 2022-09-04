@@ -1,13 +1,13 @@
 import React from 'react'
-import TemplateBookShow from '../components/UI/TemplateBookShow'
+import FilteringBooks from '../components/UI/FilteringBooks';
 
 
 
 const Endo = () => {
-  const category = "endondontics";
-  const title = "کتاب های اندودانتیکس";
+  const category ="endondontics";
+
   return (
-         <TemplateBookShow category={category} title={title} />
+         <FilteringBooks category={category} />
   )
 }
 
