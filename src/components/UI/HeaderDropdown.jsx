@@ -37,60 +37,60 @@ function HeaderDropdown() {
                             <Row className='row__items'>
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/Ortho"><i class="ri-arrow-left-circle-fill"></i><span>ارتودونسی</span></Link>
+                                        <Link to="/searchBooks" state={{ category: "orthodontics" }} ><i class="ri-arrow-left-circle-fill"></i><span>ارتودونسی</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/endo"><i class="ri-arrow-left-circle-fill"></i><span>اندودانتیکس</span></Link>
+                                        <Link to="/searchBooks" state={{ category: "endodontics" }} ><i class="ri-arrow-left-circle-fill"></i><span>اندودانتیکس</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/tarmim"><i class="ri-arrow-left-circle-fill"></i><span>ترمیمی</span></Link>
+                                        <Link to="/searchBooks" state={{ category: "operative" }} ><i class="ri-arrow-left-circle-fill"></i><span>ترمیمی</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                       <Link to="/surgery"> <i class="ri-arrow-left-circle-fill"></i><span>جراحی دهان فک صورت</span></Link>
+                                        <Link to="/searchBooks" state={{ category: "surgery" }} > <i class="ri-arrow-left-circle-fill"></i><span>جراحی دهان فک صورت</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                     <Link to="/Perio"><i class="ri-arrow-left-circle-fill"></i><span>پریودانتیکس</span></Link>
+                                        <Link to="/searchBooks" state={{ category: "periodontics" }} ><i class="ri-arrow-left-circle-fill"></i><span>پریودانتیکس</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                      <Link to="/Pediatric"><i class="ri-arrow-left-circle-fill"> </i><span>دندانپزشکی کودکان</span></Link>
+                                        <Link to="/searchBooks" state={{ category: "pediatric" }} ><i class="ri-arrow-left-circle-fill"> </i><span>دندانپزشکی کودکان</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                       <Link to="/Prosthetics"> <i class="ri-arrow-left-circle-fill"></i><span>پروتز</span></Link>
+                                        <Link to="/searchBooks" state={{ category: "prosthesis" }} ><i class="ri-arrow-left-circle-fill"></i><span>پروتز</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                       <Link to="/OralMedicine"><span> <i class="ri-arrow-left-circle-fill"></i>بیماری های دهان</span></Link>
+                                        <Link to="/searchBooks" state={{ category: "oralMedicine" }} ><span> <i class="ri-arrow-left-circle-fill"></i>بیماری های دهان</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/Radiology"><i class="ri-arrow-left-circle-fill"></i><span>رادیولوژی</span></Link>
+                                        <Link to="/searchBooks" state={{ category: "radiology" }} ><i class="ri-arrow-left-circle-fill"></i><span>رادیولوژی</span></Link>
                                     </h4>
                                 </Col>
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/BasicSciences"> <i class="ri-arrow-left-circle-fill"></i><span>علوم پایه</span></Link>
+                                        <Link to="/searchBooks" state={{ category: "basicSciences" }} ><i class="ri-arrow-left-circle-fill"></i><span>علوم پایه</span></Link>
                                     </h4>
                                 </Col>
 

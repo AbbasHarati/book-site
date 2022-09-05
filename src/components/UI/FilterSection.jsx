@@ -18,34 +18,49 @@ const FilterSection = () => {
                         <Accordion.Body>
                             <ul>
                                 <li>
-                                    <Link to="/Ortho"> ارتودونسی</Link>
+                                    <Link to="/searchBooks" state={{ category: "orthodontics" }} >
+                                        ارتودونسی
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/endo"> اندودانتیکس</Link>
+                                    <Link to="/searchBooks" state={{ category: "endodontics" }} >
+                                        اندودانتیکس
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/tarmim"> ترمیمی</Link>
+                                    <Link to="/searchBooks" state={{ category: "operative" }} >
+                                        ترمیمی
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/surgery"> جراحی</Link>
+                                    <Link to="/searchBooks" state={{ category: "surgery" }} >
+                                        جراحی
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/perio"> پریودانتیکس</Link>
+                                    <Link to="/searchBooks" state={{ category: "periodontics" }} >
+                                        پریودانتیکس
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/pediatric"> اطفال</Link>
+                                    <Link to="/searchBooks" state={{ category: "pediatric" }} >
+                                        اطفال
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/prosthetics"> پروتز</Link>
+                                    <Link to="/searchBooks" state={{ category: "prosthesis" }} >
+                                        پروتز
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/dentalMaterials"> مواد دندانی</Link>
+                                    <Link to="/searchBooks" state={{ category: "oralMedicine" }} >
+                                        بیماری های دهان
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/oralMedicine"> بیماری های دهان</Link>
-                                </li>
-                                <li>
-                                    <Link to="/basicSciences"> علوم پایه</Link>
+                                    <Link to="/searchBooks" state={{ category: "basicSciences" }} >
+                                        علوم پایه
+                                    </Link>
                                 </li>
                             </ul>
                         </Accordion.Body>

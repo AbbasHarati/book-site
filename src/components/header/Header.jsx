@@ -1,8 +1,9 @@
 import React from 'react';
-import { Container, Row, Col, FormGroup, Button, Stack, Form } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../../styles/header.css';
 import HeaderDropdown from '../UI/HeaderDropdown';
+import SearchBox from '../UI/SearchBox';
 
 
 const Header = () => {
@@ -26,19 +27,7 @@ const Header = () => {
           </Col>
 
           <Col sm>
-            <div className='header__search '>
-              <Form>
-                <FormGroup >
-                  <Stack direction="horizontal">
-                    <Form.Control type="search" placeholder="عبارت جستجو"
-                      className='header__input' />
-                    <Button variant="primary" type='submit'>
-                      <i class="ri-search-line"></i>
-                    </Button>
-                  </Stack>
-                </FormGroup>
-              </Form>
-            </div>
+            <SearchBox />
           </Col>
         </Row>
         <hr />
