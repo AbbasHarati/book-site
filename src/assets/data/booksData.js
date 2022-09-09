@@ -4,10 +4,11 @@ import img07 from '../images/books/Cohen Pathways.jpg';
 
 
 
-const booksData = [
+export const data = [
     {
         id: 1,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
         title: "C",
         author: "William R. Proffit",
@@ -22,6 +23,7 @@ const booksData = [
     {
         id: 2,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
         title: "D",
         author: "Abbas",
@@ -36,6 +38,7 @@ const booksData = [
     {
         id: 3,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
         title: "F",
         author: "Babak",
@@ -50,6 +53,7 @@ const booksData = [
     {
         id: 4,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
         title: "D",
         author: "R. Proffit",
@@ -64,6 +68,7 @@ const booksData = [
     {
         id: 5,
         category: "surgery",
+        category_id: "13",
         other_category: "",
         title: "Contemporary Oral and Maxillofacial Surgery",
         author: "James R.Hupp",
@@ -78,6 +83,7 @@ const booksData = [
     {
         id: 6,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
         title: "G",
         author: "William R. Proffit",
@@ -93,6 +99,7 @@ const booksData = [
     {
         id: 7,
         category: "endondontics",
+        category_id: "11",
         other_category: "",
         title: "Cohen's Pathways of the Pulp",
         author: "Louis H. Berman DDS FACD",
@@ -107,6 +114,7 @@ const booksData = [
     {
         id: 8,
         category: "surgery",
+        category_id: "13",
         other_category: "",
         title: "Contemporary Oral and Maxillofacial Surgery",
         author: "James R.Hupp",
@@ -121,8 +129,9 @@ const booksData = [
     {
         id: 9,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
-        title: "K",
+        title: "A",
         author: "William R. Proffit",
         publisher: "Mosby",
         publicationDate: "2016",
@@ -136,6 +145,7 @@ const booksData = [
     {
         id: 10,
         category: "endondontics",
+        category_id: "11",
         other_category: "",
         title: "Cohen's Pathways of the Pulp",
         author: "Louis H. Berman DDS FACD",
@@ -150,6 +160,7 @@ const booksData = [
     {
         id: 11,
         category: "surgery",
+        category_id: "13",
         other_category: "",
         title: "Contemporary Oral and Maxillofacial Surgery",
         author: "James R.Hupp",
@@ -164,6 +175,7 @@ const booksData = [
     {
         id: 12,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
         title: "M",
         author: "William R. Proffit",
@@ -179,6 +191,7 @@ const booksData = [
     {
         id: 13,
         category: "endondontics",
+        category_id: "11",
         other_category: "",
         title: "Cohen's Pathways of the Pulp",
         author: "Louis H. Berman DDS FACD",
@@ -193,6 +206,7 @@ const booksData = [
     {
         id: 14,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
         title: "CC",
         author: "William R. Proffit",
@@ -207,6 +221,7 @@ const booksData = [
     {
         id: 15,
         category: "pediatric",
+        category_id: "15",
         other_category: "",
         title: "Pedaitric book",
         author: "Abbas",
@@ -221,6 +236,7 @@ const booksData = [
     {
         id: 16,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
         title: "N",
         author: "Babak",
@@ -235,6 +251,7 @@ const booksData = [
     {
         id: 17,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
         title: "Q",
         author: "R. Proffit",
@@ -249,6 +266,7 @@ const booksData = [
     {
         id: 18,
         category: "surgery",
+        category_id: "13",
         other_category: "",
         title: "A Contemporary Oral and Maxillofacial Surgery",
         author: "B James R.Hupp",
@@ -263,6 +281,7 @@ const booksData = [
     {
         id: 19,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
         title: "P",
         author: "William R. Proffit",
@@ -278,6 +297,7 @@ const booksData = [
     {
         id: 20,
         category: "endodontics",
+        category_id: "11",
         other_category: "",
         title: "Cohen's Pathways of the Pulp",
         author: "Louis H. Berman DDS FACD",
@@ -292,6 +312,7 @@ const booksData = [
     {
         id: 21,
         category: "endodontics",
+        category_id: "11",
         other_category: "",
         title: "Contemporary Oral and Maxillofacial Surgery",
         author: "James R.Hupp",
@@ -306,6 +327,7 @@ const booksData = [
     {
         id: 22,
         category: "orthodontics",
+        category_id: "10",
         other_category: "",
         title: "T",
         author: "William R. Proffit",
@@ -321,6 +343,7 @@ const booksData = [
     {
         id: 23,
         category: "endondontics",
+        category_id: "11",
         other_category: "",
         title: "Cohen's Pathways of the Pulp",
         author: "Louis H. Berman DDS FACD",
@@ -335,6 +358,7 @@ const booksData = [
     {
         id: 24,
         category: "endodontics",
+        category_id: "11",
         other_category: "",
         title: "Contemporary Oral and Maxillofacial Surgery",
         author: "James R.Hupp",
@@ -349,6 +373,7 @@ const booksData = [
     {
         id: 25,
         category: "oralMedicine",
+        category_id: "17",
         other_category: "",
         title: "ORal",
         author: "William R. Proffit",
@@ -364,6 +389,7 @@ const booksData = [
     {
         id: 26,
         category: "pediatric",
+        category_id: "15",
         other_category: "",
         title: "Pediatric book---222",
         author: "Louis H. Berman DDS FACD",
@@ -378,6 +404,7 @@ const booksData = [
     {
         id: 27,
         category: "surgery",
+        category_id: "13",
         other_category: "",
         title: "surgery book---3",
         author: "Louis H. Berman DDS FACD",
@@ -392,6 +419,7 @@ const booksData = [
     {
         id: 28,
         category: "pediatric",
+        category_id: "15",
         other_category: "",
         title: "pediatric book---2",
         author: "Louis H. Berman DDS FACD",
@@ -405,7 +433,8 @@ const booksData = [
     },
     {
         id: 29,
-        category: "tarmim",
+        category: "operative",
+        category_id: "12",
         other_category: "",
         title: "tarmim book-1",
         author: "Louis H. Berman DDS FACD",
@@ -419,4 +448,4 @@ const booksData = [
     },
 ];
 
-export default booksData;
+

@@ -1,19 +1,17 @@
-import React from 'react'
-import { useLocation } from 'react-router-dom'
+import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import booksData from '../assets/data/booksData'
-
+import { data } from '../assets/data/booksData'
 import FilterSection from '../components/UI/FilterSection'
-import { useState } from 'react'
-import SortSection from '../components/UI/SortSection'
+import { useLocation } from "react-router-dom";
+import SortSection from '../components/UI/SortSection';
 
 
 const SearchBooks = () => {
 
-    const location = useLocation()
-    const { category } = location.state
+    const location = useLocation();
+    const category_id = new URLSearchParams(location.search).get('category_id');
 
-    const [booksDataSort, setBooksDataSort] = useState(booksData);
+    const [booksData, setBooksData] = useState(data);
 
     return (
         <Container>
@@ -26,42 +24,45 @@ const SearchBooks = () => {
 
                 <Col lg='9' className="result__section">
                     <Row>
-                        {category}
+                        {category_id}
                     </Row>
 
                     <Row>
-                        <SortSection  setBooksDataSort={setBooksDataSort} />
+                        <SortSection setBooksData={setBooksData} />
                     </Row>
 
                     <Row>
                         {
-                            booksDataSort.filter(book => book.category === category).map(filteredBooks => (
+                            booksData.filter(book => book.category_id === category_id).map(book => (
                                 <Col lg="3" md="4" sm="6" className='col__section'>
-                                    <div className="book__info m-2" >
+                                    <div className="book__info m-2" key={book.id}>
                                         <div className="book__img">
-                                            <img src={filteredBooks.imgUrl} width='170' height='260' alt="" className="img__responsive w-80" typeof="foaf:Image" />
+                                            <img src={book.imgUrl} width='170' height='260' alt="" className="img__responsive w-80" typeof="foaf:Image" />
                                         </div>
                                         <div className="book__details">
                                             <div className="book__title">
-                                                <p><strong>{filteredBooks.title}</strong></p>
+                                                <p><strong>{book.title}</strong></p>
                                             </div>
                                             <div className="book__edition">
-                                                <p>{filteredBooks.edition}</p>
+                                                <p>{book.edition}</p>
                                             </div>
                                             <div className="book__author">
-                                                <p>{filteredBooks.author}</p>
+                                                <p>{book.author}</p>
                                             </div>
                                             <div className="book__pubDate">
-                                                <p>{filteredBooks.publicationDate}</p>
+                                                <p>{book.publicationDate}</p>
                                             </div>
                                             <div className="book__category">
-                                                <p>{filteredBooks.category}</p>
+                                                <p>{book.category}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </Col>
                             ))
                         }
+                    </Row>
+                    <Row>
+                        <SortSection setBooksData={setBooksData} />
                     </Row>
                 </Col>
             </Row>

@@ -37,49 +37,49 @@ function HeaderDropdown() {
                             <Row className='row__items'>
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/searchBooks" state={{ category: "orthodontics" }} ><i class="ri-arrow-left-circle-fill"></i><span>ارتودونسی</span></Link>
+                                    <Link to="/searchBooks?category_id=10" ><i class="ri-arrow-left-circle-fill"></i><span>ارتودونسی</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/searchBooks" state={{ category: "endodontics" }} ><i class="ri-arrow-left-circle-fill"></i><span>اندودانتیکس</span></Link>
+                                    <Link to="/searchBooks?category_id=11" ><i class="ri-arrow-left-circle-fill"></i><span>اندودانتیکس</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/searchBooks" state={{ category: "operative" }} ><i class="ri-arrow-left-circle-fill"></i><span>ترمیمی</span></Link>
+                                    <Link to="/searchBooks?category_id=12" ><i class="ri-arrow-left-circle-fill"></i><span>ترمیمی</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/searchBooks" state={{ category: "surgery" }} > <i class="ri-arrow-left-circle-fill"></i><span>جراحی دهان فک صورت</span></Link>
+                                    <Link to="/searchBooks?category_id=13" ><i class="ri-arrow-left-circle-fill"></i><span>جراحی دهان فک صورت</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/searchBooks" state={{ category: "periodontics" }} ><i class="ri-arrow-left-circle-fill"></i><span>پریودانتیکس</span></Link>
+                                    <Link to="/searchBooks?category_id=14" ><i class="ri-arrow-left-circle-fill"></i><span>پریودانتیکس</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/searchBooks" state={{ category: "pediatric" }} ><i class="ri-arrow-left-circle-fill"> </i><span>دندانپزشکی کودکان</span></Link>
+                                    <Link to="/searchBooks?category_id=15" ><i class="ri-arrow-left-circle-fill"> </i><span>دندانپزشکی کودکان</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/searchBooks" state={{ category: "prosthesis" }} ><i class="ri-arrow-left-circle-fill"></i><span>پروتز</span></Link>
+                                    <Link to="/searchBooks?category_id=16" ><i class="ri-arrow-left-circle-fill"></i><span>پروتز</span></Link>
                                     </h4>
                                 </Col>
 
                                 <Col lg='3'>
                                     <h4 onClick={handleClose}>
-                                        <Link to="/searchBooks" state={{ category: "oralMedicine" }} ><span> <i class="ri-arrow-left-circle-fill"></i>بیماری های دهان</span></Link>
+                                    <Link to="/searchBooks?category_id=17" ><span> <i class="ri-arrow-left-circle-fill"></i>بیماری های دهان</span></Link>
                                     </h4>
                                 </Col>
 

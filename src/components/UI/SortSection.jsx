@@ -1,38 +1,46 @@
-import React  from 'react'
+import React from 'react'
+import { useState } from 'react'
 import '../../styles/sort-section.css'
+import {data} from '../../assets/data/booksData'
 
 
 
-const SortSection = ({setBooksDataSort}) => {
+
+const SortSection = ({ setBooksData }) => {
+
+    const [booksData] = useState(data);
+    const [sorted, setSorted] = useState();
+
+   // sorting funcs
+console.log(booksData);
+   const sortByTitle = () => {
+    setSorted();
+    const booksDataCopy = [...booksData];
+    booksDataCopy.sort((a, b) => {
+        return a.title > b.title ? 1 : -1;
+    });
+    setBooksData(booksDataCopy);
+}
+
+const sortByAuthor = () => {
+    setSorted();
+    const booksDataCopy = [...booksData];
+    booksDataCopy.sort((a, b) => {
+        return a.author > b.author ? 1 : -1;
+    });
+    setBooksData(booksDataCopy);
+}
+
+const sortByDate = () => {
+    setSorted();
+    const booksDataCopy = [...booksData];
+    booksDataCopy.sort((a, b) => {
+        return a.publicationDate > b.publicationDate ? -1 : 1;
+    });
+    setBooksData(booksDataCopy);
+}
 
 
-    // sorting funcs
-    const sortByTitle = () => {
-        setBooksDataSort((booksData) => {
-            const dataToSort = [...booksData].sort((a, b) =>
-                a.title > b.title ? 1 : -1,
-            );
-            return dataToSort;
-        })
-    }
-
-    const sortByAuthor = () => {
-        setBooksDataSort((booksData) => {
-            const dataToSort = [...booksData].sort((a, b) =>
-                a.author > b.author ? 1 : -1,
-            );
-            return dataToSort;
-        });
-    }
-
-    const sortByDate = () => {
-        setBooksDataSort((booksData) => {
-            const dataToSort = [...booksData].sort((a, b) =>
-                a.publicationDate > b.publicationDate ? -1 : 1,
-            );
-            return dataToSort;
-        });
-    }
     return (
         <div className="sort__section">
             <div className="sort__selectors">
